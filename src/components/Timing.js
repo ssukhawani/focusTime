@@ -11,7 +11,7 @@ export const Timing=({
     <ScrollView horizontal={true}>
     {minArr.map((item,ind)=>{
       return(
-        <View style={{margin:15}}>
+        <View style={{margin:15}} key={ind}>
           <RoundedButton text={item} size={70} onPress={()=>onChangeTiming(item)}/>
         </View>
       )
